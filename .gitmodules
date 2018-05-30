@@ -1,0 +1,3 @@
+[submodule "stm32f3-discovery-template"]
+	path = stm32f3-discovery-template
+	url = git@github.com:Statkus/stm32f3-discovery-template.git
