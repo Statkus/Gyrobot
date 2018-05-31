@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 ########################################################
 ## you need python3 and pip3
 ## -> sudo apt install python3 python3-pip
