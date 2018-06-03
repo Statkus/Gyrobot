@@ -6,10 +6,10 @@ INC_DIR = $(shell pwd)/inc
 .PHONY : clean build flash
 
 clean:
-	$(MAKE) -C $(TOOLCHAIN_BUILD_DIR) reallyclean
+	$(MAKE) -C $(TOOLCHAIN_BUILD_DIR) $@
 
 build:
 	$(MAKE) -C $(TOOLCHAIN_BUILD_DIR) SRC_DIR=$(SRC_DIR) INC_DIR=$(INC_DIR) all
 
-flash: build
-	$(MAKE) -C $(TOOLCHAIN_BUILD_DIR) program
+flash:
+	$(MAKE) -C $(TOOLCHAIN_BUILD_DIR) $@
